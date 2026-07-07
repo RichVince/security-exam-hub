@@ -1,0 +1,1 @@
+window.BlackBook={init(){$('bookSearch').oninput=()=>this.render();this.render()},render(){const term=$('bookSearch').value.toLowerCase();$('bookList').innerHTML=Phoenix.content.blackbook.filter(b=>b.join(' ').toLowerCase().includes(term)).map(b=>`<details><summary>${b[0]}</summary><p>${b[1]}</p></details>`).join('')}};
