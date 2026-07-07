@@ -1,1 +1,0 @@
-window.$=(id)=>document.getElementById(id);window.shuffle=(arr)=>{const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};window.pct=(a,b)=>b?Math.round(a/b*100):0;window.addWeak=(topic)=>{Phoenix.state.weak[topic]=(Phoenix.state.weak[topic]||0)+1};
