@@ -1,1 +1,0 @@
-window.Traps={init(){$('trapSearch').oninput=()=>this.render();this.render()},render(){const term=$('trapSearch').value.toLowerCase();$('trapList').innerHTML=Phoenix.content.traps.filter(t=>t.join(' ').toLowerCase().includes(term)).map(t=>`<div class="trap-card"><h3>${t[0]}</h3><p>${t[1]}</p><p><b>Memory:</b> ${t[2]}</p></div>`).join('')}};
