@@ -1,4 +1,0 @@
-window.Phoenix={content:window.PHOENIX_CONTENT,state:PhoenixStorage.load(),save(){PhoenixStorage.save(this.state);Dashboard.render()}};
-document.querySelectorAll('#nav button').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('#nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));$(btn.dataset.view).classList.add('active');$('pageTitle').textContent=btn.textContent;$('pageSub').textContent='Project Phoenix Enterprise v4.';if(btn.dataset.view==='progress')Progress.render()});
-$('resetBtn').onclick=()=>{Phoenix.state.tasks[PhoenixStorage.today()]={};Phoenix.save()};$('exportBtn').onclick=()=>PhoenixStorage.exportState(Phoenix.state);
-Dashboard.render();PBQ.init();TerminalLab.init();Flashcards.init();Traps.init();BlackBook.init();Exam.init();
